@@ -7,7 +7,7 @@ const Note = require('../models/Note');
 // Middleware to authenticate requests
 router.use(authMiddleware);
 
-// Get all notes for the authenticated user
+// Get all notes
 router.get('/', async (req, res) => {
   try {
     const userId = req.User._id;
@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Get a specific note by ID for the authenticated user
+// Get a specific note by ID 
 router.get('/:id', async (req, res) => {
   try {
     const userId = req.User._id;
@@ -38,7 +38,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// Create a new note for the authenticated user
+// Create a new note 
 router.post('/', async (req, res) => {
   try {
     const userId = req.User._id;
@@ -60,7 +60,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// Update an existing note by ID for the authenticated user
+// Update an existing note by ID 
 router.put('/:id', async (req, res) => {
   try {
     const userId = req.User._id;
@@ -84,7 +84,7 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-// Delete a note by ID for the authenticated user
+// Delete a note by ID 
 router.delete('/:id', async (req, res) => {
   try {
     const userId = req.User._id;
