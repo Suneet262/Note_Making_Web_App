@@ -55,7 +55,7 @@ Chose MongoDB as the database for its flexibility and scalability.
 
 ## Testing Scripts
 
-Clone the repository: git clone [].
+Clone the repository: git clone ["https://github.com/Suneet262/Note_Making_Web_App"].
 Install dependencies: npm install.
 Set up the environment variables in config.js.
 Run the application: npm start.
